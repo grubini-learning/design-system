@@ -1,0 +1,39 @@
+{
+  "name": "@ds.e/scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --watch src --exec pnpm build -e scss",
+    "lint": "stylelint './**/*.scss'",
+    "lint:fix": "pnpm lint --fix",
+    "build": "node src/scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": "pnpm lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize-scss": "^8.0.0",
+    "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-sass-guidelines": "^11.0.0",
+    "stylelint-prettier": "^5.0.0"
+  }
+}

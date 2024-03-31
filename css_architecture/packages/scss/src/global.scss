@@ -1,0 +1,21 @@
+/*=============================================
+=               TABLE OF CONTENTS            =
+=============================================*/
+
+/**
+ *
+ * FOUNDATION........................Exposing everything defined in the foundations directory
+ * BASE..............................Contains definition of css root variables and reset of the browser
+ *
+ */
+
+/*=============================================
+ =                 FOUNDATIONS                =
+ =============================================*/
+@import "./foundation/all";
+
+/*=============================================
+=                    BASE                    =
+=============================================*/
+@import "base/reset";
+@import "base/root";
