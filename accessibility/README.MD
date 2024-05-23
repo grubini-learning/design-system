@@ -15,3 +15,4 @@ _Usability for all_
 ## Dictionary
 
 - Usability: Easy to understand, delightful, free of frustrations, aesthetically pleasing
+  https://a11y.coffee/
